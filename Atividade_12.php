@@ -12,17 +12,12 @@ and open the template in the editor.
     <body>
         <?php
     
-        $value1 = 100;
-        $value2 = 200;
+    $result = 0;
+    for($valor = 0; $valor <= 1000; $valor += 8)
+        $result += $valor;
+    
+    echo "$result";
+        ?>
 
-        if ($value1 > $value2){
-            $valueaux = $value1;
-            $value1 = $value2;
-            $value2 = $valueaux;
-        }
-
-        for ($value1++ ;$value1 < $value2; $value1++)
-            echo "$value1 ";
-    ?>
     </body>
 </html>
